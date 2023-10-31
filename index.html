@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+      </style>
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="form">
+            <label for="password-length">Password Length:</label>
+            <input type="number" id="password-length" min="8" max="50" value="8">
+            <p>(Recommended is at least 8 characters)</p>
+            <br>
+            <label for="include-uppercase">Include Uppercase:</label>
+            <input type="checkbox" id="include-uppercase">
+            <br>
+            <label for="include-numbers">Include Numbers:</label>
+            <input type="checkbox" id="include-numbers">
+            <br>
+            <label for="include-symbols">Include Symbols:</label>
+            <input type="checkbox" id="include-symbols">
+            <button id="generate">Generate Password</button>
+        </div>
+        <div class="password">
+            <h2>Your Password:</h2>
+            <p id="password"></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
